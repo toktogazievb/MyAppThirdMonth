@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">MyAppThirdMonth</string>
+    <string name="welcome_text">Добро пожаловать!</string>
+    <string name="choose_picture_text">Выберите изображение из галереи, чтобы продолжить создание аккаунта.</string>
+    <string name="choose_picture_button">Выбрать изображение</string>
+    <string name="continue_btn">Продолжить</string>
+    <string name="login_succ_text">Вы успешно зарегистрировались!</string>
+</resources>
