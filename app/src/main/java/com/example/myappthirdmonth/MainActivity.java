@@ -45,16 +45,14 @@ public class MainActivity extends AppCompatActivity {
         });
 
         button2 = viewBinding.btnContinue;
-        if (!isEmpty) {
-            button2.setEnabled(true);
-            button2.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
-                    Intent intent = new Intent(MainActivity.this, SecondActivity.class);
-                    startActivity(intent);
-                }
-            });
-        }
+
+        button2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, SecondActivity.class);
+                startActivity(intent);
+            }
+        });
 
 
     }

@@ -4,5 +4,6 @@
     <string name="choose_picture_text">Выберите изображение из галереи, чтобы продолжить создание аккаунта.</string>
     <string name="choose_picture_button">Выбрать изображение</string>
     <string name="continue_btn">Продолжить</string>
-    <string name="login_succ_text">Вы успешно зарегистрировались!</string>
+    <string name="user_name">Имя пользователя</string>
+    <string name="password">Пароль</string>
 </resources>

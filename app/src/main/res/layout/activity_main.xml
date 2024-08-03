@@ -3,83 +3,81 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
-    android:background="@drawable/container_gradient_background"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/container_gradient_background"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/tvWelcome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_margin="100dp"
         android:text="@string/welcome_text"
+        android:textColor="#FFFFFF"
         android:textSize="28sp"
         android:textStyle="bold"
-        android:textColor="#FFFFFF"
-        android:layout_margin="100dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
 
-
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/ivImage"
-        android:layout_marginTop="40dp"
         android:layout_width="200dp"
-        android:scaleType="fitXY"
+        android:layout_height="200dp"
+        android:layout_marginTop="40dp"
         android:adjustViewBounds="true"
         android:background="@drawable/img_shape"
         android:padding="10dp"
-        tools:src="@drawable/di_maria"
-        android:layout_height="200dp"
-        app:layout_constraintTop_toBottomOf="@id/tvWelcome"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintTop_toBottomOf="@id/tvWelcome"
+        tools:src="@drawable/di_maria" />
 
     <TextView
         android:id="@+id/tvChooseImg"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/ivImage"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
         android:text="@string/choose_picture_text"
         android:textColor="@color/white"
         android:textSize="20sp"
-        android:layout_marginTop="20dp"
-        android:gravity="center"
-        android:layout_marginHorizontal="40dp"/>
-
-    <com.google.android.material.button.MaterialButton
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="12dp"
-        app:cornerRadius="30dp"
-        android:id="@+id/btnChooseImg"
-        android:layout_marginTop="40dp"
-        android:layout_marginHorizontal="40dp"
-        app:layout_constraintTop_toBottomOf="@id/tvChooseImg"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:backgroundTint="#8D83B5E9"
-        android:text="@string/choose_picture_button"
-        android:textSize="22sp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ivImage" />
 
     <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnChooseImg"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/continue_btn"
-        android:textSize="28sp"
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#8D83B5E9"
+        android:padding="12dp"
+        android:text="@string/choose_picture_button"
+        android:textSize="22sp"
+        app:cornerRadius="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvChooseImg" />
+
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/btnContinue"
-        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="40dp"
         android:layout_marginTop="10dp"
         android:backgroundTint="#53B36E"
-        android:layout_marginHorizontal="40dp"
-        app:layout_constraintTop_toBottomOf="@id/btnChooseImg"
-        app:layout_constraintStart_toStartOf="parent"
+        android:padding="20dp"
+        android:text="@string/continue_btn"
+        android:textSize="28sp"
         app:layout_constraintEnd_toEndOf="parent"
-        android:enabled="false" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnChooseImg" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
